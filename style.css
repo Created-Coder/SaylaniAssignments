@@ -1,0 +1,262 @@
+.blue_bar{
+    background-color: #316DC3 !important;
+    height: 50px;
+}
+
+.marquee{
+    background-color: #316DC3;
+    color:#FFFFFF;
+    margin-top: 8px;
+}
+
+.intro{
+    
+    
+}
+
+.intro p{
+    text-align: justify;
+    
+}
+
+.intro-bg{
+    background-color: #f7f8fa;
+    margin-top: 8px;
+    padding: 60px;
+}
+
+.intro-bg h3{
+    text-align: center;
+}
+
+.info-blue{
+    background-color: #2755ef;
+}
+.info-logo img{
+    width: 40px;
+    height:40px;
+    text-align: center;
+}
+
+.info-count span{
+    font-size: 3rem;
+    font-weight: 500;
+    color:white;
+}
+
+.info{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+#month{
+    color: #03f113;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+h3{
+    color: #316DC3;
+}
+
+#info-h{
+    font-size: 14px;
+    font-weight: 500;
+    color:white;
+
+
+}
+.doing{
+    background-color: #f7f8fa;
+    padding: 100px;
+}
+
+.inner-div{
+    background-color: white;
+    height: 185px;
+    margin-top: 27px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+    color:#316DC3;
+    text-align: center;
+}
+
+.inner-div h2{
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.inner-div img{
+    width: 70px;
+}
+
+
+#info-h{
+    font-size: 16px;
+    font-weight: 500;
+    color:white;
+
+}
+
+
+
+
+.intro-bg span{
+    color: green;
+}
+
+.missionBox{
+    border: 1px solid #eeeeee !important;
+    width: 360px;
+    height:74px;
+    background-color: #f7f8fa !important;
+    margin-top: 25px;
+    color:#316DC3 ;
+}
+
+.MissionProjects h3{
+    margin-top: 25px;
+    color:#316DC3;
+}
+
+.missionText h6{
+    position: relative;
+    bottom: 27px;
+    left: 50px;
+}
+
+.missionText{
+    margin-left: 20px;
+	margin-top: 20px;
+}
+
+.gallery span{
+    color:green;
+}
+
+.galleryHead{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.gallertImg img{
+    width: 183px;
+    height: 150px;
+}
+
+.contact{
+    background-color:#25272e;
+    margin-top: 110px;
+    padding: 45px;
+}
+
+.address{
+    color: #bbb;
+    font-size: 13px;
+    margin-top: 85px;
+}
+
+
+.cell{
+    position: relative;
+    top: 25px;
+    right: 137px;
+}
+
+.links h5{
+    color: white;
+    margin-top: 65px;
+    margin-left: 20px;
+}
+
+.bar{
+    background-color: #bbb;
+    height: 1px;
+    width: 100%;
+    margin-left: 30px;
+
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.top_bar{
+    background-color: #316DC3 !important;
+    padding: 8px 0px;
+}
+
+
+.top_bar .social_media ul{
+    list-style:none;
+    margin:0px;
+    padding:0px 0px;
+
+}
+.top_bar .social_media ul:after{
+    clear:both;
+    content:"";
+    display:block;
+}
+.top_bar .social_media ul li{
+    float:left;
+    margin-right:25px;
+}
+
+.tagline{
+    color:#fff;
+}
+.doner_btn{
+    text-align: right;
+}
+.doner_btn a{
+    color: #333;
+    background-color: #e6e6e6;
+    font-size: 11px;
+    padding: 5px 8px;
+    border: 1px solid;
+}
+
+.navi{       background-color: #f7f8fa;
+    padding: 26px;
+    margin: 0 -15px;
+}
+
+.navi img{
+    width: 174px;
+    margin: -15px;
+}
+
+.nav{
+    margin: -15px;
+}
+
+.copyright{
+    background-color: #316DC3 !important
+}
+
+.copyright p{
+    padding: 12px;
+    color: white;
+    font-size: 10px;
+}
+
+.doing h3{
+    text-align: center;
+}
+
+.doing span{
+    color: green;
+}
+.menuzord{padding:0px;
+color:#333333;}
+.menuzord-menu > li.active > a, .menuzord-menu > li:hover > a{background:#316dc3;}
+.menuzord-brand {
+    cursor: inherit;
+}
+.menuzord-brand {
+    margin: 10px 30px 0 0;
+}
+.menuzord-brand img {
+    max-height: 52px;
+}
