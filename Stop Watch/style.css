@@ -1,0 +1,59 @@
+.bg-img{
+    background-image: url("pexels-photo-531880.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    width: 500px; 
+    height: 500px; 
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    
+}
+.main > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #000000;;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: #1a9088; 
+    border: 2px solid #1a9088;
+    
+  }
+  
+  
+  .button1:hover {
+    background-color: #1a9088;
+    color: white;
+  }
