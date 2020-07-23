@@ -1,0 +1,119 @@
+.pics {
+    display: inline-block;
+}
+
+figcaption {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+#form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+#para {
+    padding: 7px;
+    width: 605px;
+    margin: 0 auto;
+    line-height: 20px;
+    font-family: Arial;
+    text-align: justify;
+    border: 3px solid gold;
+}
+
+#editBtn {
+    width: 170px;
+    margin-bottom: 50px;
+}
+
+.modal {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+    position: fixed;
+    padding-top: 100px;
+    background-color: rgba(0,0,0,0.9);
+}
+  
+.modal-content {
+    width: 80%;
+    height: 480px;
+    display: block;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.caption  {
+    width: 80%;
+    margin: auto;
+    height: 140px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    max-width: 700px;
+    font-weight: bold;
+    text-align: center;
+    font-family: monospace;
+}
+  
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+.close {
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    transition: 0.2s;
+    font-weight: bold;
+    position: absolute;
+}
+
+.close:hover {
+    cursor: pointer;
+    font-size: 50px;
+    transition: 0.2s;
+}
+
+#text {
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+#inBtn , #outBtn {
+    border: none;
+    width: 140px;
+    height: 50px;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: black;
+}

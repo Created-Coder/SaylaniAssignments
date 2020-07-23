@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="style.css">
+    <script>alert("I am using JS in a file named index.html in Head element");</script>
+</head>
+<body>
+    <script>alert("I am using JS in a file named index.html in Body element before my page HTML");</script>
+
+     <!-- Some HTML code from here......... -->
+
+    <script>alert("I am using JS in a file named index.html in Body element inside my page HTML ");</script>
+
+     <!-- till here -->
+
+    <script>alert("I am using JS in a file named index.html in Body element after my page HTML");</script>
+
+
+<!-- Chap # 43 - 48 (Task1) -->
+<a href="javascript:void(0)" onclick="alert('This alert box is generated on click of link!')">Click to alert</a>
+
+<!-- Chap # 43 - 48 (Task2) -->
+<figure class="pics">
+    <img src="Images/Iphone11.jpg" height="120" onclick="message()">
+    <figcaption>I Phone 11 pro</figcaption>
+</figure>
+<figure class="pics">
+    <img src="Images/GalaxyNote11.jpg" height="120" onclick="message()">
+    <figcaption>Galaxy Note 11</figcaption>
+</figure>
+<figure class="pics">
+    <img src="Images/OppoReno2.jpeg" height="120" onclick="message()">
+    <figcaption>Oppo Reno 2</figcaption>
+</figure>
+<figure class="pics">
+    <img src="Images/VivoV19Pro.jpg" height="120" onclick="message()">
+    <figcaption>Vivo V19 pro</figcaption>
+</figure>
+
+<!-- Chap # 43 - 48 (Task3) -->
+<table id="table">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="row1">
+            <td>0</td>
+            <td>Salman</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row1')">Delete</button></td>
+        </tr>
+        <tr id="row2">
+            <td>1</td>
+            <td>Saif</td>
+            <td>9</td>
+            <td><button onclick="deleteRow('row2')">Delete</button></td>
+        </tr>
+        <tr id="row3">
+            <td>2</td>
+            <td>Mavia</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row3')">Delete</button></td>
+        </tr>
+        <tr id="row4">
+            <td>3</td>
+            <td>Aniq</td>
+            <td>8</td>
+            <td><button onclick="deleteRow('row4')">Delete</button></td>
+        </tr>
+        <tr id="row5">
+            <td>4</td>
+            <td>Hamza</td>
+            <td>7</td>
+            <td><button onclick="deleteRow('row5')">Delete</button></td>
+        </tr>
+        <tr id="row6">
+            <td>5</td>
+            <td>Abid</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row6')">Delete</button></td>
+        </tr>
+        <tr id="row7">
+            <td>6</td>
+            <td>Farhan</td>
+            <td>8</td>
+            <td><button onclick="deleteRow('row7')">Delete</button></td>
+        </tr>
+        <tr id="row8">
+            <td>7</td>
+            <td>Ziyad</td>
+            <td>9</td>
+            <td><button onclick="deleteRow('row8')">Delete</button></td>
+        </tr>
+        <tr id="row9">
+            <td>8</td>
+            <td>Hammad</td>
+            <td>8</td>
+            <td><button onclick="deleteRow('row9')">Delete</button></td>
+        </tr>
+        <tr id="row10">
+            <td>9</td>
+            <td>Shaheryar</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row10')">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Chap # 43 - 48 (Task4) -->
+<figure align="center">
+    <img src="Images/html.png" id="change" width="500" onmouseover="changeImage('change','Images/javascript.png')"
+        onmouseout="changeImage('change','Images/html.png')">
+    <figcaption>Hover to change the image</figcaption>
+</figure>
+
+<!-- Chap # 43 - 48 (Task5) -->
+<input type="text" value="0" id="counter" disabled>
+<button onclick="increment()">Increase</button>
+<button onclick="decrement()">Decrease</button>
+
+
+
+<!-- // Chap # 49 - 52 (Task1) -->
+<form id="form" style="border:5px solid #ccc">
+    <div align="center">
+        <h1>Sign Up (Student Portal)</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <b>First Name</b>
+        <input type="text" id="fname" placeholder="Enter First Name" required>
+        <br><br>
+
+        <b>Last Name</b>
+        <input type="text" id="lname" placeholder="Enter Last Name" required>
+        <br><br>
+
+        <b>Email - Id</b>&nbsp;&nbsp;
+        <input type="text" id="email" placeholder="Enter Email" required>
+        <br><br>
+
+        <b>Enter Password</b>&nbsp;
+        <input type="password" id="pswd" placeholder="Enter Password" required>
+        <br><br>
+
+        <b>Repeat Password</b>
+        <input type="password" id="re-pswd" placeholder="Repeat Password" required>
+        <br><br>
+
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+        <button id="btn" onclick="SignUp()">Sign Up</button>
+    </div>
+</form>
+
+<!-- // Chap # 49 - 52 (Task2) -->
+<div id="para">
+    <img src="Images/javascript.png" width="600" height="250">
+    <p id="text">
+        JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.
+        <a href="javascript:void(0)" onclick="readMore()">Read More</a>
+    </p>
+    <p id="moreText" hidden>
+        JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.
+        JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax,
+        dynamic
+        typing, prototype-based object-orientation, and first-class functions.
+        <br><br>
+        Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript
+        enables
+        interactive web pages and is an essential part of web applications. The vast majority of websites use it for
+        client-side page behavior, and all major web browsers have a dedicated JavaScript engine to execute it.
+    </p>
+</div>
+
+<!-- Chap # 49 - 52 (Task3) -->
+<table id="stdTable">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>F-Name</th>
+            <th>Roll No</th>
+            <th colspan="2">Edit/Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="row1">
+            <td>0</td>
+            <td id="name1">Saif</td>
+            <td id="fname1">Bashir</td>
+            <td id="rollnum1">39</td>
+            <td><button onclick="editRow('name1','fname1','rollnum1')">Edit</button></td>
+            <td><button onclick="deleteRow('row1')">Delete</button></td>
+        </tr>
+        <tr id="row2">
+            <td>1</td>
+            <td id="name2">Aniq</td>
+            <td id="fname2">Nasir</td>
+            <td id="rollnum2">18</td>
+            <td><button onclick="editRow('name2','fname2','rollnum2')">Edit</button></td>
+            <td><button onclick="deleteRow('row2')">Delete</button></td>
+        </tr>
+        <tr id="row3">
+            <td>2</td>
+            <td id="name3">Ziyad</td>
+            <td id="fname3">Beyg</td>
+            <td id="rollnum3">14</td>
+            <td><button onclick="editRow('name3','fname3','rollnum3')">Edit</button></td>
+            <td><button onclick="deleteRow('row3')">Delete</button></td>
+        </tr>
+        <tr id="row4">
+            <td>3</td>
+            <td id="name4">Mavia</td>
+            <td id="fname4">Ali</td>
+            <td id="rollnum4">12</td>
+            <td><button onclick="editRow('name4','fname4','rollnum4')">Edit</button></td>
+            <td><button onclick="deleteRow('row4')">Delete</button></td>
+        </tr>
+        <tr id="row5">
+            <td>4</td>
+            <td id="name5">Salman</td>
+            <td id="fname5">Zakir</td>
+            <td id="rollnum5">40</td>
+            <td><button onclick="editRow('name5','fname5','rollnum5')">Edit</button></td>
+            <td><button onclick="deleteRow('row5')">Delete</button></td>
+        </tr>
+        <tr id="row6">
+            <td>5</td>
+            <td id="name6">Hamza</td>
+            <td id="fname6">Farooq</td>
+            <td id="rollnum6">21</td>
+            <td><button onclick="editRow('name6','fname6','rollnum6')">Edit</button></td>
+            <td><button onclick="deleteRow('row6')">Delete</button></td>
+        </tr>
+        <tr id="row7">
+            <td>6</td>
+            <td id="name7">Farhan</td>
+            <td id="fname7">Jameel</td>
+            <td id="rollnum7">29</td>
+            <td><button onclick="editRow('name7','fname7','rollnum7')">Edit</button></td>
+            <td><button onclick="deleteRow('row7')">Delete</button></td>
+        </tr>
+        <tr id="row8">
+            <td>7</td>
+            <td id="name8">Huzaifa</td>
+            <td id="fname8">Khan</td>
+            <td id="rollnum8">44</td>
+            <td><button onclick="editRow('name8','fname8','rollnum8')">Edit</button></td>
+            <td><button onclick="deleteRow('row8')">Delete</button></td>
+        </tr>
+        <tr id="row9">
+            <td>8</td>
+            <td id="name9">Hammad</td>
+            <td id="fname9">Waheed</td>
+            <td id="rollnum9">25</td>
+            <td><button onclick="editRow('name9','fname9','rollnum9')">Edit</button></td>
+            <td><button onclick="deleteRow('row9')">Delete</button></td>
+        </tr>
+        <tr id="row10">
+            <td>9</td>
+            <td id="name10">Shaheryar</td>
+            <td id="fname10">Qasim</td>
+            <td id="rollnum10">43</td>
+            <td><button onclick="editRow('name10','fname10','rollnum10')">Edit</button></td>
+            <td><button onclick="deleteRow('row10')">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<form id="fields" hidden>
+    <hr>
+    <b>Your Name:</b><br>
+    <input type="text" id="inp1" placeholder="Your Name">
+    <br><br>
+
+    <b>Father Name:</b><br>
+    <input type="text" id="inp2" placeholder="Father Name">
+    <br><br>
+
+    <b>Roll No:</b><br>
+    <input type="text" id="inp3" placeholder="Roll Number">
+    <br><br>
+
+    <button id="editBtn" onclick="editDetails()">Done Editing</button>
+</form>
+
+
+
+<!-- Chap # 53 - 57 (Task1) -->
+<div align="center">
+    <h1>Beautiful Places</h1>
+    <img id="myImg0" width="300" height="250" src="Images/1.jpg"
+        onclick="clickImg('myImg0','myModal0','img0','caption0')" alt="Salar de Uyuni, Bolivia">
+    <div id="myModal0" class="modal">
+        <span class="close" onclick="closeModal('myModal0')">&times;</span>
+        <img class="modal-content" src="Images/1.jpg" id="img0">
+        <div id="caption0" class="caption"></div>
+    </div>
+    <img id="myImg1" width="300" height="250" src="Images/2.jpg"
+        onclick="clickImg('myImg1','myModal1','img1','caption1')" alt="Inque Terre, Rio Maggiore, Italy">
+    <div id="myModal1" class="modal">
+        <span class="close" onclick="closeModal('myModal1')">&times;</span>
+        <img class="modal-content" id="img1">
+        <div id="caption1" class="caption"></div>
+    </div>
+    <img id="myImg2" width="300" height="250" src="Images/3.jpg"
+        onclick="clickImg('myImg2','myModal2','img2','caption2')" alt="Blue Lagoon, Iceland">
+    <div id="myModal2" class="modal">
+        <span class="close" onclick="closeModal('myModal2')">&times;</span>
+        <img class="modal-content" id="img2">
+        <div id="caption2" class="caption"></div>
+    </div>
+    <img id="myImg3" width="300" height="250" src="Images/4.png"
+        onclick="clickImg('myImg3','myModal3','img3','caption3')" alt="Maldives">
+    <div id="myModal3" class="modal">
+        <span class="close" onclick="closeModal('myModal3')">&times;</span>
+        <img class="modal-content" id="img3">
+        <div id="caption3" class="caption"></div>
+    </div>
+    <img id="myImg4" width="300" height="250" src="Images/5.jpg"
+        onclick="clickImg('myImg4','myModal4','img4','caption4')" alt="Glass Beach, California, USA">
+    <div id="myModal4" class="modal">
+        <span class="close" onclick="closeModal('myModal4')">&times;</span>
+        <img class="modal-content" id="img4">
+        <div id="caption4" class="caption"></div>
+    </div>
+    <img id="myImg5" width="300" height="250" src="Images/6.jpg"
+        onclick="clickImg('myImg5','myModal5','img5','caption5')" alt="Santorini, Greece">
+    <div id="myModal5" class="modal">
+        <span class="close" onclick="closeModal('myModal5')">&times;</span>
+        <img class="modal-content" id="img5">
+        <div id="caption5" class="caption"></div>
+    </div>
+    <img id="myImg6" width="300" height="250" src="Images/7.png"
+        onclick="clickImg('myImg6','myModal6','img6','caption6')" alt="Neuschwanstein Castle, Germany">
+    <div id="myModal6" class="modal">
+        <span class="close" onclick="closeModal('myModal6')">&times;</span>
+        <img class="modal-content" id="img6">
+        <div id="caption6" class="caption"></div>
+    </div>
+    <img id="myImg7" width="300" height="250" src="Images/8.jpg"
+        onclick="clickImg('myImg7','myModal7','img7','caption7')" alt="Havasu Falls, Grand Canyon, Arizona, USA">
+    <div id="myModal7" class="modal">
+        <span class="close" onclick="closeModal('myModal7')">&times;</span>
+        <img class="modal-content" id="img7">
+        <div id="caption7" class="caption"></div>
+    </div>
+    <img id="myImg8" width="300" height="250" src="Images/9.jpg"
+        onclick="clickImg('myImg8','myModal8','img8','caption8')" alt="Iceland">
+    <div id="myModal8" class="modal">
+        <span class="close" onclick="closeModal('myModal8')">&times;</span>
+        <img class="modal-content" id="img8">
+        <div id="caption8" class="caption"></div>
+    </div>
+    <img id="myImg9" width="300" height="250" src="Images/10.jpg"
+        onclick="clickImg('myImg9','myModal9','img9','caption9')" alt="Swiss Alps, Switzerland">
+    <div id="myModal9" class="modal">
+        <span class="close" onclick="closeModal('myModal9')">&times;</span>
+        <img class="modal-content" id="img9">
+        <div id="caption9" class="caption"></div>
+    </div>
+    <img id="myImg10" width="300" height="250" src="Images/14.png"
+        onclick="clickImg('myImg10','myModal10','img10','caption10')" alt="Rio de Janeiro, Brazil">
+    <div id="myModal10" class="modal">
+        <span class="close" onclick="closeModal('myModal10')">&times;</span>
+        <img class="modal-content" id="img10">
+        <div id="caption10" class="caption"></div>
+    </div>
+    <img id="myImg11" width="300" height="250" src="Images/12.jpg"
+        onclick="clickImg('myImg11','myModal11','img11','caption11')" alt="Aansu lake, Pakistan">
+    <div id="myModal11" class="modal">
+        <span class="close" onclick="closeModal('myModal11')">&times;</span>
+        <img class="modal-content" id="img11">
+        <div id="caption11" class="caption"></div>
+    </div>
+</div>
+
+<!-- Chap # 53 - 57 (Task2) -->
+<div align="center">
+    <p id="text">
+        Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia.
+        It is the world's fifth-most populous country with a population exceeding 212.2 million.
+        It is the 33rd-largest country by area, spanning 881,913 square kilometres (340,509 square miles).
+        Pakistan has a 1,046-kilometre (650-mile) coastline along the Arabian Sea and Gulf of Oman in the
+        south and is bordered by India to the east, Afghanistan to the west, Iran to the southwest, and
+        China to the northeast. It is separated narrowly from Tajikistan by Afghanistan's Wakhan Corridor
+        in the northwest, and also shares a maritime border with Oman.
+    </p>
+    <button id="inBtn" onclick="zoomIn()">Zoom In (+)</button>
+    <button id="outBtn" onclick="zoomOut()">Zoom Out (-)</button>
+</div>
+
+
+
+<!-- Chap # 58 - 67 (Task1 & Task2) -->
+<div>
+    <h1>DOM</h1>
+    <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <label for="email">Email</label>
+        <input type="text" id="email"/>
+    </div>
+    <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p>
+        <p class="render" id="lastName">Last Name: Bank</p>
+        <p class="render"> Email : alexbank@example.com</p>
+        <p class="render"> Country : Pakistan </p>
+        <p class="render"> contact : +92 300 1234567</p>
+    </div>
+</div>    
+
+    <script src="app.js"></script>
+</body>
+</html>
