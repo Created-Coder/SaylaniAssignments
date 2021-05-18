@@ -1,0 +1,60 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#calculator-my{
+    background: linear-gradient(silver, rgb(24, 24, 24),rgb(24, 24, 24),rgb(24, 24, 24),rgb(24, 24, 24),rgb(24, 24, 24),rgb(24, 24, 24),rgb(24, 24, 24),rgb(24, 24, 24),rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), silver);
+    border-radius: 10px;
+}
+
+#screen-my{
+    width: 500px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 34px;
+    text-align: right;
+    font-weight: bold;
+    background:linear-gradient(white,rgb(182, 163, 119)) ;
+    color: black;
+    border: none;
+    /* padding-top: 20px; */
+}
+
+td{
+    width: 45px;
+    height: 55px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgb(98, 98, 98);
+    background: linear-gradient(rgb(158, 153, 153), rgb(44, 44, 44));
+    border-radius: 8px;
+    color: white;
+}
+/* 
+.css-icons{
+    font-size: small;
+    font-weight: normal;
+}
+
+.pi-img-my{
+    height: 18px;
+}
+
+#bg-color-my{
+    background-color: rgb(136, 58, 34);
+}
+
+#equalsto-bottom{
+    padding-top: 7%;
+}
+
+#second-btn-my{
+    color: orangered;
+    background-color: black !important;
+    width: 10px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgb(98, 98, 98);
+    border-radius: 8px;
+} */
