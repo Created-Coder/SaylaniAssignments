@@ -1,0 +1,24 @@
+#main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#main > div{
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.animation{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    /* animation-delay: 2s; */
+
+}
+
+
+@keyframes example {
+    from {background-color:red; left:0px; top:0px;}
+    to {background-color:green; left:0px; top:500px;}
+  }
